@@ -13,6 +13,7 @@ with DAG(
     default_args=default_args,
     schedule_interval="@daily",
     start_date=datetime(2022, 7, 6),
+    catchup=False
     ) as dag:
 
     # fucntionsをコールするタスク
